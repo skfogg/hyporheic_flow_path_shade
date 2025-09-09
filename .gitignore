@@ -48,4 +48,3 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
-data/processed_model_output/first100m_data/

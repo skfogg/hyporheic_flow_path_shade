@@ -2,8 +2,7 @@
 ## Calculate the annual temperature amplitude at every model node
 ## -- and interpolate to a raster (1 cm resolution)
 ## -- WARNING: INTERPOLATION OF RASTERS TAKES A LONG TIME TO RUN
-## -- Data is pre-processed and located in the ./data/processed_model_output directory
-##
+## 
 
 ## -- read in model data
 file_directory <- "./data/processed_model_output/"

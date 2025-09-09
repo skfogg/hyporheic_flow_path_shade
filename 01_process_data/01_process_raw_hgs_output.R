@@ -1,7 +1,6 @@
 ##
 ## Process Simulation experiment model results and save
 ## WARNING: FILES TAKE A LONG TIME TO PROCESS 
-## Data is pre-processed and located in in the './data/processed_model_output' directory
 ##
 
 if(!require("HGSReader", character.only = TRUE)){
