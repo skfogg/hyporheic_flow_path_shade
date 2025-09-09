@@ -1,6 +1,10 @@
 ##
 ## Process Simulation experiment model results and save
-## WARNING: FILES TAKE A LONG TIME TO PROCESS 
+##
+## -- hyporheic_flow_path_data must first be downloaded and unzipped from: 
+## -- https://doi.org/10.5061/dryad.2v6wwq026
+##
+## -- WARNING: FILES TAKE A LONG TIME TO PROCESS 
 ##
 
 if(!require("HGSReader", character.only = TRUE)){
@@ -13,7 +17,8 @@ library(gstat)
 library(HGSReader)
 source("./functions/calc_daily_mean.R")
 
-file_directory <- "../hyporheic_flow_path_data/"
+## -- *may need to change if you did not unzip to the project working directory
+file_directory <- "./hyporheic_flow_path_data/"
 
 kvals <- rep(c("100", "400"), each = 12)
 bcvals <- rep(rep(c("sunny", "shady", "riveronly"), each = 4), times = 2)
